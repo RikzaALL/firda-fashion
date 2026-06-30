@@ -17,8 +17,11 @@ RUN apt-get update && apt-get install -y \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
-# Enable Apache rewrite
-RUN a2enmod rewrite
+# Enable Apache rewrite & fix MPM (prefork required for mod_php)
+RUN a2enmod rewrite && \
+    a2dismod mpm_event 2>/dev/null; \
+    a2dismod mpm_worker 2>/dev/null; \
+    a2enmod mpm_prefork
 
 # Install Composer
 COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
