@@ -20,13 +20,6 @@ php -r '
             }
         }
     }
-    // Platform auto-detection: Render, Railway, Heroku, etc.
-    $externalUrl = getenv("RENDER_EXTERNAL_URL") ?: getenv("RAILWAY_PUBLIC_DOMAIN") ?: getenv("HEROKU_APP_URL") ?: "";
-    if ($externalUrl !== "") {
-        $scheme = parse_url($externalUrl, PHP_URL_SCHEME) ?: "https";
-        $host = parse_url($externalUrl, PHP_URL_HOST) ?: $externalUrl;
-        $env["APP_URL"] = "$scheme://$host";
-    }
     $keys = [
         "APP_KEY","APP_ENV","APP_DEBUG","APP_URL","APP_NAME",
         "DB_CONNECTION","DB_HOST","DB_PORT","DB_DATABASE","DB_USERNAME","DB_PASSWORD","DB_URL",
@@ -41,6 +34,13 @@ php -r '
         if ($val !== false && $val !== "") {
             $env[$key] = $val;
         }
+    }
+    // Platform auto-detection (override APP_URL with public HTTPS URL)
+    $externalUrl = getenv("RENDER_EXTERNAL_URL") ?: getenv("RAILWAY_PUBLIC_DOMAIN") ?: getenv("HEROKU_APP_URL") ?: "";
+    if ($externalUrl !== "") {
+        $scheme = parse_url($externalUrl, PHP_URL_SCHEME) ?: "https";
+        $host = parse_url($externalUrl, PHP_URL_HOST) ?: $externalUrl;
+        $env["APP_URL"] = "$scheme://$host";
     }
     $out = "";
     foreach ($env as $k => $v) {
