@@ -1,11 +1,10 @@
-FROM webdevops/php-nginx:8.3
+FROM richarvey/nginx-php-fpm:3.1.6
 
-ENV WEB_DOCUMENT_ROOT=/app/public
-ENV WEB_DOCUMENT_INDEX=index.php
+ENV WEBROOT=/var/www/html/public
 
-WORKDIR /app
+WORKDIR /var/www/html
 
-COPY . /app
+COPY . .
 
 RUN composer install --no-dev --optimize-autoloader
 
@@ -13,4 +12,4 @@ RUN php artisan config:cache
 RUN php artisan route:cache
 RUN php artisan view:cache
 
-EXPOSE 80   
+EXPOSE 80
