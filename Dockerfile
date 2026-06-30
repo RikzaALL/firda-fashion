@@ -31,7 +31,7 @@ COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
 
 WORKDIR /var/www/html
 
-COPY . .
+COPY . /var/www/html
 
 RUN composer install --no-dev --optimize-autoloader
 
@@ -53,6 +53,8 @@ RUN sed -ri -e 's!/var/www/html!${APACHE_DOCUMENT_ROOT}!g' \
 
 # SQLite (only if you use sqlite)
 RUN touch database/database.sqlite
+
+RUN ls -R /etc/apache2
 
 EXPOSE 80
 
