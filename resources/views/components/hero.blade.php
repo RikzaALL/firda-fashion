@@ -1,4 +1,4 @@
-<section id="home" class="min-h-screen pt-16 lg:pt-20 flex items-center">
+<section id="home" class="min-h-screen pt-28 lg:pt-20 flex items-center">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div class="space-y-8 py-12 lg:py-20">
