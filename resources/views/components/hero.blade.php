@@ -29,7 +29,7 @@
                 </div>
             </div>
 
-            <div class="relative hidden lg:block">
+            <div class="relative mt-12 lg:mt-0">
                 <div class="aspect-[3/4] bg-gradient-to-br from-primary/10 to-secondary/10 relative overflow-hidden">
                     <img src="{{ asset('assets/FotoModelFF.webp') }}" alt="Firda Fashion Model" class="w-full h-full object-cover">
                     <div class="absolute -bottom-4 -right-4 w-32 h-32 bg-accent/10 -z-10"></div>
