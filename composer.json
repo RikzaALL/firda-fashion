@@ -10,7 +10,8 @@
         "laravel/fortify": "*",
         "laravel/framework": "^12.0",
         "laravel/tinker": "^2.10.1",
-        "livewire/livewire": "*"
+        "livewire/livewire": "*",
+        "spatie/laravel-sitemap": "*"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",
@@ -34,11 +35,15 @@
         }
     },
     "scripts": {
+        "deploy": [
+            "@php artisan sitemap:generate --ansi"
+        ],
         "setup": [
             "composer install",
             "@php -r \"file_exists('.env') || copy('.env.example', '.env');\"",
             "@php artisan key:generate",
             "@php artisan migrate --force",
+            "@php artisan sitemap:generate --ansi",
             "npm install",
             "npm run build"
         ],
