@@ -1,7 +1,7 @@
-# FirdaFashion — Boutique Website Design Spec
+# HayyaFashion — Boutique Website Design Spec
 
 ## Overview
-Full-stack Laravel 12 boutique website for FirdaFashion, a sewing and fashion service. Single-page layout with navigation-anchored sections: Hero, Layanan, Gallery Jahit, Tentang Kami, Kontak.
+Full-stack Laravel 12 boutique website for HayyaFashion, a sewing and fashion service. Single-page layout with navigation-anchored sections: Hero, Layanan, Gallery Jahit, Tentang Kami, Kontak.
 
 ## Stack
 - Backend: Laravel 12
@@ -39,13 +39,13 @@ Exaggerated Minimalism — bold minimalism, oversized typography, high contrast,
 ## Page Sections
 
 ### Navigation
-- Sticky top navbar with FirdaFashion logo (left) and links (right):
+- Sticky top navbar with HayyaFashion logo (left) and links (right):
   - Home / Layanan / Gallery Jahit / Tentang Kami / Kontak
 - Mobile: hamburger menu with slide-out drawer
 - Active section highlighted with primary color
 
 ### Hero
-- Left: Brand name "Firda Fashion" (Cormorant, oversized)
+- Left: Brand name "Hayya Modiste" (Cormorant, oversized)
 - Slogan: "Esensi dari Sebuah Gaya"
 - Description paragraph about sewing services
 - Two CTAs: "Gallery Jahit" (primary) and "Hubungi Kami" (outline)

@@ -1,9 +1,9 @@
-<nav class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-border/50">
+<nav x-data="{ show: true, lastScroll: 0 }" x-init="window.addEventListener('scroll', () => { let st = window.scrollY; show = st <= lastScroll || st < 80; lastScroll = st; })" :class="show ? 'translate-y-0' : '-translate-y-full'" class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-border/50 transition-transform duration-300">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex items-center justify-between h-16 lg:h-20">
             <a href="#home" class="flex items-center gap-3 shrink-0">
-                <img src="{{ asset('assets/Firda_Fashion_Logo.webp') }}" alt="Firda Fashion" class="h-10 lg:h-12 w-auto">
-                <span class="font-display text-2xl lg:text-3xl font-bold text-primary tracking-tight">Firda Fashion</span>
+                <img src="{{ asset('assets/Logo_Hayya_Fashion.webp') }}" alt="Hayya Modiste" class="h-10 lg:h-12 w-auto">
+                <span class="font-display text-2xl lg:text-3xl font-bold text-primary tracking-tight">Hayya Modiste</span>
             </a>
 
             <div class="hidden lg:flex items-center gap-8">

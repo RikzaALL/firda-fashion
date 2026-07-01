@@ -8,7 +8,7 @@
             <div class="w-16 h-0.5 bg-primary mx-auto mt-6"></div>
         </div>
 
-        <div class="grid md:grid-cols-3 gap-8">
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
             <div class="group p-8 bg-background border border-border hover:border-primary/30 transition-all duration-500">
                 <div class="w-14 h-14 bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors duration-300">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-primary" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 482.87">
@@ -17,7 +17,7 @@
                 </div>
                 <h3 class="font-display text-2xl font-semibold text-foreground mb-3">Jahit</h3>
                 <p class="text-foreground/70 leading-relaxed text-sm">
-                    Layanan jahit custom untuk pakaian pria dan wanita. Dari gaun, kemeja, hingga busana formal — dikerjakan dengan presisi dan bahan berkualitas.
+                    Layanan jahit custom untuk pakaian pria dan wanita. Dari gaun, kemeja, hingga busana formal — dikerjakan dengan presisi dan bahan berkualitas. Menerima custom order untuk satuan maupun massal, dengan hasil rapi dan nyaman dipakai.
                 </p>
             </div>
 
@@ -29,7 +29,19 @@
                 </div>
                 <h3 class="font-display text-2xl font-semibold text-foreground mb-3">Pembuatan Pola</h3>
                 <p class="text-foreground/70 leading-relaxed text-sm">
-                    Pembuatan pola custom sesuai desain dan ukuran Anda. Pola presisi untuk produksi satuan maupun massal dengan standar konsisten.
+                    Pembuatan pola custom sesuai desain dan ukuran Anda mulai dari gaun, gamis, tunik, kemeja, celana, jaket, hoody, sweater dan kaos. Pola presisi untuk produksi satuan maupun massal dengan standar konsisten.
+                </p>
+            </div>
+
+            <div class="group p-8 bg-background border border-border hover:border-primary/30 transition-all duration-500">
+                <div class="w-14 h-14 bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-primary" fill="currentColor" viewBox="0 0 512 512">
+                        <path d="M374.467,128.707c7.68-23.893-3.413-48.64-25.6-58.88C335.213,63.853,319,58.733,307.907,55.32c-5.973-1.707-10.24-7.68-10.24-13.653V16.92c0-10.24-7.68-17.92-17.92-17.92h-49.493c-10.24,0-17.92,7.68-17.92,17.92v24.747c0,5.973-4.267,11.947-10.24,13.653c-11.093,3.413-27.307,8.533-40.96,14.507c-22.187,10.24-33.28,34.987-25.6,58.88l27.307,81.067c9.387,29.013,9.387,60.587,0,88.747l-7.68,23.893c-2.56,8.533-3.413,17.92-1.707,25.6c3.413,17.067,16.213,26.453,33.28,26.453h59.733V408.6c0,46.933-38.4,85.333-85.333,85.333c-5.12,0-8.533,3.413-8.533,8.533s3.413,8.533,8.533,8.533c35.513,0,66.949-18.325,85.333-45.983v37.449c0,5.12,3.413,8.533,8.533,8.533s8.533-3.413,8.533-8.533v-37.449C281.918,492.675,313.354,511,348.867,511c5.12,0,8.533-3.413,8.533-8.533s-3.413-8.533-8.533-8.533c-46.933,0-85.333-38.4-85.333-85.333v-34.133h59.733c17.067,0,29.867-9.387,33.28-25.6c1.707-8.533,0.853-17.067-1.707-25.6l-7.68-23.893c-9.387-29.013-9.387-60.587,0-88.747L374.467,128.707z"/>
+                    </svg>
+                </div>
+                <h3 class="font-display text-2xl font-semibold text-foreground mb-3">Vermak</h3>
+                <p class="text-foreground/70 leading-relaxed text-sm">
+                    Layanan perbaikan dan penyesuaian pakaian. Mengubah ukuran, memperbaiki jahitan, mengganti resleting, dan berbagai kebutuhan vermak lainnya dengan hasil rapi.
                 </p>
             </div>
 
